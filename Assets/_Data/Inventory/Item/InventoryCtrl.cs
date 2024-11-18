@@ -1,18 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
-public class InventoryCtrl : MonoBehaviour
+public class InventoryCtrl : HyDBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] protected List<ItemInventory> item = new();
+    public List<ItemInventory> Item => item;
 }
